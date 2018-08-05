@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/valor_em_real"
+            android:textSize="25sp" />
+
+        <faranjit.currency.edittext.CurrencyEditText
+            android:id="@+id/edit_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/hint_valor"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            app:locale="pt_BR"
+            app:showSymbol="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_em_dolar"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_em_euro"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_calcular"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorLight"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
